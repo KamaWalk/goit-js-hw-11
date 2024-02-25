@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const response = await fetch(url);
             const data = await response.json();
 
-            if (data.hits.length === 0) {
+            if (data.hits.length <= 0) {
                 alert('Sorry, there are no images matching your search query. Please try again.');
                 isLoading = false;
                 return;
